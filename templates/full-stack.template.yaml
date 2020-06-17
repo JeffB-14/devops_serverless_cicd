@@ -177,7 +177,6 @@ Resources:
     Properties:
       Parameters:
         AppPipeline: !GetAtt LambdaStack.Outputs.DynamicPipelineMakerLambda
-        CodecommitCredentialsLambdaArn: !GetAtt LambdaStack.Outputs.CodecommitCredentialsLambda
         RepositoryName: !Ref AppName
       TemplateURL: !Sub https://${S3BucketName}.s3.amazonaws.com/${S3KeyPrefix}templates/cloudwatch.template.yaml
       TimeoutInMinutes: 60
