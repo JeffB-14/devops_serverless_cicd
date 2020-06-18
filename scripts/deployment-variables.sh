@@ -28,3 +28,6 @@ PROD_ACCOUNT_ID=123456789123
 # Prefix for files in S3 bucket. 
 # Default is fine for most scenarios, this can optionally be adjusted
 S3_PREFIX=AWS-CICD-Devops-SampleApplication
+# AWS CLI profile to use
+# This must be setup prior to running the shell scripts
+PROFILE=sample_project
