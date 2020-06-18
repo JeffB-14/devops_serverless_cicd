@@ -176,8 +176,8 @@ Resources:
     Type: AWS::CloudFormation::Stack
     Properties:
       Parameters:
-        AppPipeline: !GetAtt LambdaStack.Outputs.DynamicPipelineMakerLambda
-        RepositoryName: !Ref AppName
+        AppPipeline: !GetAtt ProjectPipelineStack.Outputs.PipelineName
+        RepositoryName: !GetAtt ProjectSetupStack.Outputs.RepoName
       TemplateURL: !Sub https://${S3BucketName}.s3.amazonaws.com/${S3KeyPrefix}templates/cloudwatch.template.yaml
       TimeoutInMinutes: 60
 
