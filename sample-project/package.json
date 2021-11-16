@@ -14,7 +14,7 @@
   },
   "author": "Jeff Beier",
   "devDependencies": {
-    "aws-sdk": "^2.298.0",
+    "aws-sdk": "^2.814.0",
     "logger": "^0.0.1"
   }
 }
